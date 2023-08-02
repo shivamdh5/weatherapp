@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="favicons/cold.ico">
+    <title>Cold</title>
+</head>
+
+<body class="cold">
+    <img class="fire" src="images/cold.jpeg" alt="ice-image">
+
+    <ul class="coldd">
+        <li>The weather outside is too Cold</li>
+        <li>Get inside your home and grab your blankets</li>
+        <li>Put on your jackets</li>
+        <li>Stay Hydrated</li>
+    </ul>
+    <button id="playButton" class="btn  btn-outline-primary butt">Play audio</button>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function () {
+            var audio = new Audio('sounds/cold.mp3');
+            audio.play();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

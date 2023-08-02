@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicons/storm.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Wind</title>
+</head>
+
+<body class="storm">
+    <img class="wind" src="images/storm.jpeg" alt="storm-image">
+
+    <ul class="hott">
+        <li>Their is a possibility of storm outside</li>
+        <li>So be at home</li>
+        <li>if you are outside then go to your home as soon as possible</li>
+    </ul>
+    <button id="playButton" class="btn  btn-dark butt">Play audio</button>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function () {
+            var audio = new Audio('sounds/storm.mp3');
+            audio.play();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

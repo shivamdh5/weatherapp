@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicons/fire.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Hot</title>
+</head>
+
+<body class="hot">
+    <img class="fire" src="images/fire.png" alt="fire-image">
+
+    <ul class="hott">
+        <li>The weather outside is too hot</li>
+        <li>Get inside your home and turn on your AC or Cooler</li>
+        <li>Stay Hydrated</li>
+    </ul>
+    <button id="playButton" class="btn  btn-secondary butt">Play audio</button>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function () {
+            var audio = new Audio('sounds/fire.mp3');
+            audio.play();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

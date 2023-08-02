@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/ee311fe374.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicons/wt.ico">
+</head>
+
+<body>
+    <section class="fsect">
+        <h3 class="mess">Welcome</h3>
+        <h4 class="mess">You can check out weather for any city around the world</h4>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Weather App</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#bottom">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex" role="search">
+                    <input id="city" class="form-control me-2" type="search" placeholder="City name"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="submit">Go</button>
+                </form>
+            </div>
+        </nav>
+    </section>
+    <div class="container">
+        <h2 class="my-4 text-center user">Weather of <span id="cityName"></span></h2>
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Temperatures</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="temp2"></span><small
+                                    class="text-body-secondary fw-light"><span> &#8451;</span></small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Temperature is <span id="temp"></span></li>
+                                <li>Feels like <span id="feels_like"></span></li>
+                                <li>Min Temperature is <span id="min_temp"></span></li>
+                                <li>Max Temperature is <span id="max_temp"></span></li>
+                            </ul>
+                            <a id="achor" class="wt" href="nice.html">Click here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-dark border-dark">
+                            <h4 class="my-0 fw-normal">Wind info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small
+                                    class="text-body-secondary fw-light"> km/h</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Wind degrees is <span id="wind_degrees"></span></li>
+                                <li>Wind speed is <span id="wind_speed"></span></li>
+                                <li>Sunrise time is <span id="sunrise"></span></li>
+                                <li>Sunset time is <span id="sunset"></span></li>
+                            </ul>
+                            <a id="wind" class="wt" href="nice.html">Click here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Cloud info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="cloud_pct2"></span><small
+                                    class="text-body-secondary fw-light"> %</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Rain probability is <span id="cloud_pct"></span>%</li>
+                                <li><br></li>
+                                <li>humidity is <span id="humidity"></span></li>
+                                <li><br></li>
+                            </ul>
+                            <a id="cloud" class="wt" href="nice.html">Click here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <div id="bottom">
+        <a class="footer-link" href="https://leetcode.com/shivamdhariya/">Leetcode</a>
+        <a class="footer-link" href="https://www.codechef.com/users/dumb_2406">codechef</a>
+        <a class="footer-link" href="info.html">Website</a>
+        <p class="copyright">© 2023 Shivam dhariya | All rights reserved</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
