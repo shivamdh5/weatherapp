@@ -158,3 +158,15 @@ img {
 .storm {
     background-color: darkcyan;
 }
+
+                          /* Responsive ness */
+@media only screen and (max-width:600px){
+   .footer-link{
+      position: relative;
+      right: 300px;
+   }
+   .copyright{
+    position: relative;
+    right: 328px;
+   }
+}
