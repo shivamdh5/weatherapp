@@ -12,13 +12,17 @@
 </head>
 
 <body class="neutral">
-    <img class="nice" src="images/nice.jpeg" alt="Nice-image">
-    <ul class="neutrall">
-        <li>The weather outside is glorius</li>
-        <br>
-        <li>Go get some walk and enjoy</li>
-    </ul>
-    <button id="playButton" class="btn  btn-outline-primary butt">Play audio</button>
+    <div class="container-fluid">
+        <div class="shiftcenter">
+            <img class="nice" src="images/nice.jpeg" alt="Nice-image">
+        </div>
+        <ul class="neutrall">
+            <li>The weather outside is glorius</li>
+            <br>
+            <li>Go get some walk and enjoy</li>
+        </ul>
+        <button id="playButton" class="btn  btn-outline-primary butt">Play audio</button>
+    </div>
     <script>
         document.getElementById('playButton').addEventListener('click', function () {
             var audio = new Audio('sounds/nice.mp3');
