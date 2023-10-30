@@ -25,11 +25,11 @@ const getweather = (city) => {
             cloud_pct2.innerHTML = response.cloud_pct
             temp.innerHTML = response.temp
             temp2.innerHTML = response.temp
-            if (response.temp >= 32) {
+            if (response.temp >= 31) {
                 const anchor = document.getElementById('achor');
                 anchor.href = 'fire.html';
             }
-            if (response.temp < 32 && response.temp >= 22) {
+            if (response.temp < 31 && response.temp >= 22) {
                 const anchor = document.getElementById('achor');
                 anchor.href = 'nice.html';
             }
